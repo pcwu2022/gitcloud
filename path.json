@@ -1,4 +1,14 @@
-[
-    "shared/club.jpg",
-    "shared/PLL/PLL_78.pdf"
-]
+{
+    "shared": {
+        "__files__": [
+            "club.jpg",
+            "index.html"
+        ],
+        "PLL": {
+            "__files__": [
+                "index.html",
+                "PLL_78.pdf"
+            ]
+        }
+    }
+}
