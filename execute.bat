@@ -12,4 +12,3 @@ git commit -m "auto commit on %TIME%"
 git push
 
 echo Finished!
-pause
