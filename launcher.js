@@ -89,4 +89,4 @@ const createHTMLs = (current, path) => {
 
 createHTMLs(dirs, "./");
 
-fs.writeFileSync("path.json", JSON.stringify(dirs, null, 4));
+// fs.writeFileSync("path.json", JSON.stringify(dirs, null, 4));
