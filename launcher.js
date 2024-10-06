@@ -62,6 +62,9 @@ const HTMLTemplate = [`
 `];
 
 const createLink = (href, text) => {
+    if (href.indexOf(".jpg") !== -1 || href.indexOf(".png") !== -1 || href.indexOf(".jpeg") !== -1){
+        return `        <a href="${href}"><img src="${href}" alt="${text}" width=300></a><br />\n`;
+    }
     return `        <a href="${href}">${text}</a><br />\n`;
 }
 
