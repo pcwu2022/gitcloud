@@ -1,26 +1,180 @@
-
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
-        <title>Git Cloud</title>
+        <title>Git Cloud: Art</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="https://github.com/fluidicon.png">
+        <style>
+            body { 
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0px;
+   padding: 0px;
+}
+.main-header {
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+    background-color: burlywood;
+    display: flex;
+}
+.reverse {
+    cursor: pointer;
+    flex-grow: 1;
+}
+.main-title {
+    text-align: center;
+    flex-grow: 8;
+}
+.card {
+    display: inline-block;
+    position: relative;
+    background-color: antiquewhite;
+    cursor: pointer;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+img {
+    width: 300px;
+}
+.card-title {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    vertical-align: top;
+}
+.body {
+    padding: 10px;
+}
+.link {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    background-color: antiquewhite;
+    cursor: pointer;
+    width: 300px;
+    margin: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+.link-title {
+    font-weight: 500;
+    /* height: 50px; */
+}
+.card-download {
+    padding: 30%;
+    padding-top: 10px;
+}
+.download-image {
+    width: 100%;
+}
+
+.card:hover {
+    transform: scale(0.95);
+    background-color: burlywood;
+}
+.link:hover {
+    transform: scale(0.95);
+    background-color: burlywood;
+}
+        </style>
     </head>
     <body>
-        <h1>Git Cloud</h1>
-        <a href="creations_high_school (12).jpg"><img src="creations_high_school (12).jpg" alt="creations_high_school (12).jpg" width=300></a><br />
-        <a href="creations_high_school (14).jpg"><img src="creations_high_school (14).jpg" alt="creations_high_school (14).jpg" width=300></a><br />
-        <a href="creations_high_school (16).jpg"><img src="creations_high_school (16).jpg" alt="creations_high_school (16).jpg" width=300></a><br />
-        <a href="creations_high_school (29).jpg"><img src="creations_high_school (29).jpg" alt="creations_high_school (29).jpg" width=300></a><br />
-        <a href="creations_high_school (30).jpg"><img src="creations_high_school (30).jpg" alt="creations_high_school (30).jpg" width=300></a><br />
-        <a href="creations_high_school (32).jpg"><img src="creations_high_school (32).jpg" alt="creations_high_school (32).jpg" width=300></a><br />
-        <a href="creations_high_school (7).jpg"><img src="creations_high_school (7).jpg" alt="creations_high_school (7).jpg" width=300></a><br />
-        <a href="hsinchu_metro.png"><img src="hsinchu_metro.png" alt="hsinchu_metro.png" width=300></a><br />
-        <a href="基礎中炮開局 - Copy.mp4">基礎中炮開局 - Copy.mp4</a><br />
-        <a href="棋譜讀法介紹.mp4">棋譜讀法介紹.mp4</a><br />
-        <a href="美術_一點透視.png"><img src="美術_一點透視.png" alt="美術_一點透視.png" width=300></a><br />
-        <a href="美術_立體透視.jpg"><img src="美術_立體透視.jpg" alt="美術_立體透視.jpg" width=300></a><br />
-        <a href="車.png"><img src="車.png" alt="車.png" width=300></a><br />
+        <div class="main-header">
+            <h3 class="reverse" onclick="location.href='../index.html'">◀️ Back</h3><h2 class="main-title">Git Cloud: Art</h2><h3 class="reverse" onclick="location.href='../index.html'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        </div>
+        <div class="body">
+            <br />
+<div class="card" onclick="cardClick('creations_high_school (12).jpg')">
+    <div class="card-title">creations_high_sch...</div>
+    <img class="card-body" alt="creations_high_sch..." src="creations_high_school (12).jpg"></img>
+</div>
 
+<div class="card" onclick="cardClick('creations_high_school (14).jpg')">
+    <div class="card-title">creations_high_sch...</div>
+    <img class="card-body" alt="creations_high_sch..." src="creations_high_school (14).jpg"></img>
+</div>
+
+<div class="card" onclick="cardClick('creations_high_school (16).jpg')">
+    <div class="card-title">creations_high_sch...</div>
+    <img class="card-body" alt="creations_high_sch..." src="creations_high_school (16).jpg"></img>
+</div>
+
+<div class="card" onclick="cardClick('creations_high_school (29).jpg')">
+    <div class="card-title">creations_high_sch...</div>
+    <img class="card-body" alt="creations_high_sch..." src="creations_high_school (29).jpg"></img>
+</div>
+
+<div class="card" onclick="cardClick('creations_high_school (30).jpg')">
+    <div class="card-title">creations_high_sch...</div>
+    <img class="card-body" alt="creations_high_sch..." src="creations_high_school (30).jpg"></img>
+</div>
+
+<div class="card" onclick="cardClick('creations_high_school (32).jpg')">
+    <div class="card-title">creations_high_sch...</div>
+    <img class="card-body" alt="creations_high_sch..." src="creations_high_school (32).jpg"></img>
+</div>
+
+<div class="card" onclick="cardClick('creations_high_school (7).jpg')">
+    <div class="card-title">creations_high_sch...</div>
+    <img class="card-body" alt="creations_high_sch..." src="creations_high_school (7).jpg"></img>
+</div>
+
+<div class="card" onclick="cardClick('hsinchu_metro.png')">
+    <div class="card-title">hsinchu_metro</div>
+    <img class="card-body" alt="hsinchu_metro" src="hsinchu_metro.png"></img>
+</div>
+
+<div class="card" onclick="cardClick('基礎中炮開局 - Copy.mp4')">
+    <div class="card-title">基礎中炮開局 - Copy</div>
+    <div class="card-download">
+        <img class="download-image" alt="基礎中炮開局 - Copy" src="https://cdn-icons-png.flaticon.com/512/6404/6404478.png"></img>
+    </div>
+</div>
+
+<div class="card" onclick="cardClick('棋譜讀法介紹.mp4')">
+    <div class="card-title">棋譜讀法介紹</div>
+    <div class="card-download">
+        <img class="download-image" alt="棋譜讀法介紹" src="https://cdn-icons-png.flaticon.com/512/6404/6404478.png"></img>
+    </div>
+</div>
+
+<div class="card" onclick="cardClick('美術_一點透視.png')">
+    <div class="card-title">美術_一點透視</div>
+    <img class="card-body" alt="美術_一點透視" src="美術_一點透視.png"></img>
+</div>
+
+<div class="card" onclick="cardClick('美術_立體透視.jpg')">
+    <div class="card-title">美術_立體透視</div>
+    <img class="card-body" alt="美術_立體透視" src="美術_立體透視.jpg"></img>
+</div>
+
+<div class="card" onclick="cardClick('車.png')">
+    <div class="card-title">車</div>
+    <img class="card-body" alt="車" src="車.png"></img>
+</div>
+
+        </div>
+        <script>
+            const cardClick = (href) => {
+    location.href = href;
+}
+const linkClick = (href) => {
+    location.href = href;
+}
+        </script>
     </body>
 </html>

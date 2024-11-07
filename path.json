@@ -1,0 +1,136 @@
+{
+    "key": "Home",
+    "shared": {
+        "key": "shared",
+        "Art": {
+            "key": "Art",
+            "__files__": [
+                "creations_high_school (12).jpg",
+                "creations_high_school (14).jpg",
+                "creations_high_school (16).jpg",
+                "creations_high_school (29).jpg",
+                "creations_high_school (30).jpg",
+                "creations_high_school (32).jpg",
+                "creations_high_school (7).jpg",
+                "hsinchu_metro.png",
+                "index.html",
+                "基礎中炮開局 - Copy.mp4",
+                "棋譜讀法介紹.mp4",
+                "美術_一點透視.png",
+                "美術_立體透視.jpg",
+                "車.png"
+            ]
+        },
+        "__files__": [
+            "club.jpg",
+            "index.html",
+            "instagram.html",
+            "The Centrality of Pu in the Universe.pdf",
+            "課綱.md"
+        ],
+        "ICS Lab": {
+            "key": "ICS Lab",
+            "__files__": [
+                "index.html"
+            ],
+            "notes": {
+                "key": "notes",
+                "__files__": [
+                    "index.html",
+                    "PLL_78.pdf"
+                ]
+            },
+            "papers": {
+                "key": "papers",
+                "__files__": [
+                    "2009SOVC_A_0.92mW_10-bit_50-MSs_SAR_ADC_in_0.13um_CMOS_Process.pdf",
+                    "500-MS_s_5-bit_ADC_in_65-nm_CMOS_With_Split_Capacitor_Array_DAC.pdf",
+                    "A_10-bit_50-MS_s_SAR_ADC_With_a_Monotonic_Capacitor_Switching_Procedure.pdf",
+                    "A_8-bit_500-KS_s_low_power_SAR_ADC_for_bio-medical_applications.pdf",
+                    "BRSummer15Switch.pdf",
+                    "index.html",
+                    "phase-locked-loops.pdf",
+                    "Redundancy.pdf"
+                ]
+            },
+            "programs": {
+                "key": "programs",
+                "__files__": [
+                    "index.html",
+                    "pll.png",
+                    "pll.py",
+                    "prog.py"
+                ]
+            },
+            "ZIP": {
+                "key": "ZIP",
+                "__files__": [
+                    "Hw1.rar",
+                    "HW2.zip",
+                    "HW3.zip",
+                    "HW4.zip",
+                    "HW5.zip",
+                    "index.html"
+                ]
+            }
+        },
+        "Notes": {
+            "key": "Notes",
+            "High School": {
+                "key": "High School",
+                "__files__": [
+                    "index.html",
+                    "統整_TRML統整講義.pdf",
+                    "統整_數學總複習.pdf",
+                    "統整_普物公式.pdf",
+                    "統整_普通物理I.pdf",
+                    "統整_普通物理II.pdf",
+                    "統整_選訓教材.pdf"
+                ]
+            },
+            "__files__": [
+                "index.html"
+            ],
+            "Learning": {
+                "key": "Learning",
+                "__files__": [
+                    "index.html",
+                    "主動學習_化學.pdf",
+                    "主動學習_地科.pdf",
+                    "主動學習_數學126題.pdf",
+                    "主動學習_物理.pdf",
+                    "主動學習_生物.pdf"
+                ]
+            }
+        },
+        "Portfolio": {
+            "key": "Portfolio",
+            "__files__": [
+                "index.html",
+                "SARS_CoV_2-破解新冠肺炎病毒的終極密碼.pdf",
+                "從HelloWorld到神經網路.pdf"
+            ]
+        },
+        "scraped": {
+            "key": "scraped",
+            "__files__": [
+                "index.html",
+                "_f_job.json",
+                "_f_marriage.json",
+                "_f_mood.json",
+                "_f_relationship.json",
+                "_f_talk.json",
+                "_f_tech_job.json",
+                "_f_trending.json"
+            ]
+        },
+        "Slides": {
+            "key": "Slides",
+            "__files__": [
+                "index.html",
+                "第五堂社課.pdf",
+                "醫用程式設計_20240727.pdf"
+            ]
+        }
+    }
+}

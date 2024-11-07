@@ -1,20 +1,160 @@
-
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
-        <title>Git Cloud</title>
+        <title>Git Cloud: scraped</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="https://github.com/fluidicon.png">
+        <style>
+            body { 
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0px;
+   padding: 0px;
+}
+.main-header {
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+    background-color: burlywood;
+    display: flex;
+}
+.reverse {
+    cursor: pointer;
+    flex-grow: 1;
+}
+.main-title {
+    text-align: center;
+    flex-grow: 8;
+}
+.card {
+    display: inline-block;
+    position: relative;
+    background-color: antiquewhite;
+    cursor: pointer;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+img {
+    width: 300px;
+}
+.card-title {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    vertical-align: top;
+}
+.body {
+    padding: 10px;
+}
+.link {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    background-color: antiquewhite;
+    cursor: pointer;
+    width: 300px;
+    margin: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+.link-title {
+    font-weight: 500;
+    /* height: 50px; */
+}
+.card-download {
+    padding: 30%;
+    padding-top: 10px;
+}
+.download-image {
+    width: 100%;
+}
+
+.card:hover {
+    transform: scale(0.95);
+    background-color: burlywood;
+}
+.link:hover {
+    transform: scale(0.95);
+    background-color: burlywood;
+}
+        </style>
     </head>
     <body>
-        <h1>Git Cloud</h1>
-        <a href="_f_job.json">_f_job.json</a><br />
-        <a href="_f_marriage.json">_f_marriage.json</a><br />
-        <a href="_f_mood.json">_f_mood.json</a><br />
-        <a href="_f_relationship.json">_f_relationship.json</a><br />
-        <a href="_f_talk.json">_f_talk.json</a><br />
-        <a href="_f_tech_job.json">_f_tech_job.json</a><br />
-        <a href="_f_trending.json">_f_trending.json</a><br />
+        <div class="main-header">
+            <h3 class="reverse" onclick="location.href='../index.html'">◀️ Back</h3><h2 class="main-title">Git Cloud: scraped</h2><h3 class="reverse" onclick="location.href='../index.html'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        </div>
+        <div class="body">
+            <br />
+<div class="card" onclick="cardClick('_f_job.json')">
+    <div class="card-title">_f_job.json</div>
+    <div class="card-download">
+        <img class="download-image" alt="_f_job.json" src="https://cdn-icons-png.flaticon.com/512/3588/3588277.png"></img>
+    </div>
+</div>
 
+<div class="card" onclick="cardClick('_f_marriage.json')">
+    <div class="card-title">_f_marriage.json...</div>
+    <div class="card-download">
+        <img class="download-image" alt="_f_marriage.json..." src="https://cdn-icons-png.flaticon.com/512/3588/3588277.png"></img>
+    </div>
+</div>
+
+<div class="card" onclick="cardClick('_f_mood.json')">
+    <div class="card-title">_f_mood.json</div>
+    <div class="card-download">
+        <img class="download-image" alt="_f_mood.json" src="https://cdn-icons-png.flaticon.com/512/3588/3588277.png"></img>
+    </div>
+</div>
+
+<div class="card" onclick="cardClick('_f_relationship.json')">
+    <div class="card-title">_f_relationship.js...</div>
+    <div class="card-download">
+        <img class="download-image" alt="_f_relationship.js..." src="https://cdn-icons-png.flaticon.com/512/3588/3588277.png"></img>
+    </div>
+</div>
+
+<div class="card" onclick="cardClick('_f_talk.json')">
+    <div class="card-title">_f_talk.json</div>
+    <div class="card-download">
+        <img class="download-image" alt="_f_talk.json" src="https://cdn-icons-png.flaticon.com/512/3588/3588277.png"></img>
+    </div>
+</div>
+
+<div class="card" onclick="cardClick('_f_tech_job.json')">
+    <div class="card-title">_f_tech_job.json...</div>
+    <div class="card-download">
+        <img class="download-image" alt="_f_tech_job.json..." src="https://cdn-icons-png.flaticon.com/512/3588/3588277.png"></img>
+    </div>
+</div>
+
+<div class="card" onclick="cardClick('_f_trending.json')">
+    <div class="card-title">_f_trending.json...</div>
+    <div class="card-download">
+        <img class="download-image" alt="_f_trending.json..." src="https://cdn-icons-png.flaticon.com/512/3588/3588277.png"></img>
+    </div>
+</div>
+
+        </div>
+        <script>
+            const cardClick = (href) => {
+    location.href = href;
+}
+const linkClick = (href) => {
+    location.href = href;
+}
+        </script>
     </body>
 </html>

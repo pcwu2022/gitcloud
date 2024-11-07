@@ -1,23 +1,161 @@
-
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
-        <title>Git Cloud</title>
+        <title>Git Cloud: shared</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="https://github.com/fluidicon.png">
+        <style>
+            body { 
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0px;
+   padding: 0px;
+}
+.main-header {
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+    background-color: burlywood;
+    display: flex;
+}
+.reverse {
+    cursor: pointer;
+    flex-grow: 1;
+}
+.main-title {
+    text-align: center;
+    flex-grow: 8;
+}
+.card {
+    display: inline-block;
+    position: relative;
+    background-color: antiquewhite;
+    cursor: pointer;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+img {
+    width: 300px;
+}
+.card-title {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    vertical-align: top;
+}
+.body {
+    padding: 10px;
+}
+.link {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    background-color: antiquewhite;
+    cursor: pointer;
+    width: 300px;
+    margin: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+.link-title {
+    font-weight: 500;
+    /* height: 50px; */
+}
+.card-download {
+    padding: 30%;
+    padding-top: 10px;
+}
+.download-image {
+    width: 100%;
+}
+
+.card:hover {
+    transform: scale(0.95);
+    background-color: burlywood;
+}
+.link:hover {
+    transform: scale(0.95);
+    background-color: burlywood;
+}
+        </style>
     </head>
     <body>
-        <h1>Git Cloud</h1>
-        <a href="club.jpg"><img src="club.jpg" alt="club.jpg" width=300></a><br />
-        <a href="instagram.html">instagram.html</a><br />
-        <a href="The Centrality of Pu in the Universe.pdf">The Centrality of Pu in the Universe.pdf</a><br />
-        <a href="課綱.md">課綱.md</a><br />
-        <a href="Art/index.html">Art</a><br />
-        <a href="ICS Lab/index.html">ICS Lab</a><br />
-        <a href="Notes/index.html">Notes</a><br />
-        <a href="Portfolio/index.html">Portfolio</a><br />
-        <a href="scraped/index.html">scraped</a><br />
-        <a href="Slides/index.html">Slides</a><br />
+        <div class="main-header">
+            <h3 class="reverse" onclick="location.href='../index.html'">◀️ Back</h3><h2 class="main-title">Git Cloud: shared</h2><h3 class="reverse" onclick="location.href='../index.html'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        </div>
+        <div class="body">
+            
+<div class="link" onclick="linkClick('Art/index.html')">
+    <div class="link-title">📁&nbsp;&nbsp;Art</div>
+</div>
 
+<div class="link" onclick="linkClick('ICS Lab/index.html')">
+    <div class="link-title">📁&nbsp;&nbsp;ICS Lab</div>
+</div>
+
+<div class="link" onclick="linkClick('Notes/index.html')">
+    <div class="link-title">📁&nbsp;&nbsp;Notes</div>
+</div>
+
+<div class="link" onclick="linkClick('Portfolio/index.html')">
+    <div class="link-title">📁&nbsp;&nbsp;Portfolio</div>
+</div>
+
+<div class="link" onclick="linkClick('scraped/index.html')">
+    <div class="link-title">📁&nbsp;&nbsp;scraped</div>
+</div>
+
+<div class="link" onclick="linkClick('Slides/index.html')">
+    <div class="link-title">📁&nbsp;&nbsp;Slides</div>
+</div>
+<br />
+<div class="card" onclick="cardClick('club.jpg')">
+    <div class="card-title">club</div>
+    <img class="card-body" alt="club" src="club.jpg"></img>
+</div>
+
+<div class="card" onclick="cardClick('instagram.html')">
+    <div class="card-title">instagram</div>
+    <div class="card-body">
+        <iframe title="instagram" src="instagram.html" frameborder="0"></iframe>
+    </div>
+</div>
+
+<div class="card" onclick="cardClick('The Centrality of Pu in the Universe.pdf')">
+    <div class="card-title">The Centrality of ...</div>
+    <div class="card-body">
+        <iframe title="The Centrality of ..." src="The Centrality of Pu in the Universe.pdf" frameborder="0"></iframe>
+    </div>
+</div>
+
+<div class="card" onclick="cardClick('課綱.md')">
+    <div class="card-title">課綱</div>
+    <div class="card-body">
+        <iframe title="課綱" src="課綱.md" frameborder="0"></iframe>
+    </div>
+</div>
+
+        </div>
+        <script>
+            const cardClick = (href) => {
+    location.href = href;
+}
+const linkClick = (href) => {
+    location.href = href;
+}
+        </script>
     </body>
 </html>

@@ -28,14 +28,16 @@ const startDir = './shared';
 const allFiles = getAllFiles(startDir);
 
 // traverse all files
-let dirs = {};
+let dirs = {key: "Home"};
 for (let file of allFiles){
     filename = file.replaceAll("\\", "/");
     let filePath = filename.split("/");
     let current = dirs;
     while (filePath.length > 1){
         if (!current[filePath[0]]){
-            current[filePath[0]] = {};
+            current[filePath[0]] = {
+                key: filePath[0]
+            };
         }
         current = current[filePath[0]];
         filePath.shift();
@@ -46,50 +48,108 @@ for (let file of allFiles){
     current.__files__.push(filePath[0])
 }
 
-const HTMLTemplate = [`
-<!DOCTYPE html>
-<html lang="en-us">
-    <head>
-        <meta charset="utf-8">
-        <title>Git Cloud</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </head>
-    <body>
-        <h1>Git Cloud</h1>
-`,`
-    </body>
-</html>
-`];
+const Template = "./template.html";
+const Card = "./components/card.html";
+const Image = "./components/image.html";
+const Link = "./components/link.html";
+const Download = "./components/download.html";
+const Video = "./components/video.html";
+const Audio = "./components/audio.html";
+const CSS = "./style.css";
+const JS = "./script.js";
 
-const createLink = (href, text) => {
-    if (href.indexOf(".jpg") !== -1 || href.indexOf(".png") !== -1 || href.indexOf(".jpeg") !== -1){
-        return `        <a href="${href}"><img src="${href}" alt="${text}" width=300></a><br />\n`;
+const render = async (templatePath, props) => {
+    return new Promise((resolve, reject) => {
+        fs.readFile(templatePath, "utf-8",  (err, data) => {
+            let htmlArr = data.split("{{");
+            let finalHTML = htmlArr[0];
+            for (let i = 1; i < htmlArr.length; i++){
+                let tempTuple = htmlArr[i].split("}}");
+                let key = tempTuple[0];
+                if (key in props){
+                    finalHTML += props[key];
+                }
+                finalHTML += tempTuple[1];
+            }
+            resolve(finalHTML);
+        });
+    })
+}
+
+const fileType = (filePath) => {
+    let types = {
+        image: ["jpg", "jpeg", "png", "svg"],
+        doc: ["pdf", "md", "html"],
+        video: ["mp4"],
+        audio: ["mp3", "wav"]
     }
-    return `        <a href="${href}">${text}</a><br />\n`;
+    for (let type in types){
+        for (let sub of types[type]){
+            if (filePath.indexOf(sub) !== -1){
+                return type;
+            }
+        }
+    }
+    return "download";
+}
+
+const fileName = (filePath) => {
+    let pathArr = filePath.split(".");
+    pathArr.splice(pathArr.length - 1, 1);
+    let retPath = pathArr.join(".");
+    if (fileType(filePath) === "download"){
+        retPath = filePath;
+    }
+    if (retPath.length > 15){
+        retPath = retPath.substring(0, 18) + "...";
+    }
+    return retPath;
 }
 
 // create indexing HTMLs
-const createHTMLs = (current, path) => {
-    let html = HTMLTemplate[0];
+const createHTMLs = async (current, path) => {
+    let props = {
+        title: current.key,
+        body: ""
+    }
+    props.CSS = await render(CSS, {});
+    props.JS = await render(JS, {});
+
+    for (let key in current){
+        if (key === "__files__" || key === "key"){
+            continue;
+        }
+        await createHTMLs(current[key], path + key + "/");
+        props.body += "\n";
+        props.body += await render(Link, {title: key, href: key + "/index.html"})
+    }
+    props.body += "<br />"
     if (current.__files__ !== undefined){
         for (file of current.__files__){
             if (file === "index.html"){
                 continue;
             }
-            html += createLink(file, file);
+            props.body += "\n";
+            if (fileType(file) === "doc"){
+                props.body += await render(Card, {title: fileName(file), href: file});
+            } else if (fileType(file) === "image"){
+                props.body += await render(Image, {title: fileName(file), href: file});
+            } else if (fileType(file) === "video"){
+                props.body += await render(Video, {title: fileName(file), href: file});
+            } else if (fileType(file) === "audio"){
+                props.body += await render(Audio, {title: fileName(file), href: file});
+            } else {
+                props.body += await render(Download, {title: fileName(file), href: file});
+            }
         }
     }
-    for (let key in current){
-        if (key === "__files__"){
-            continue;
-        }
-        createHTMLs(current[key], path + key + "/");
-        html += createLink(key + "/index.html", key);
-    }
-    html += HTMLTemplate[1];
-    fs.writeFileSync(path + "index.html", html);
+    
+    let html = await render(Template, props);
+    fs.writeFile(path + "index.html", html, (err) => {
+        console.error(err);
+    });
 }
 
 createHTMLs(dirs, "./");
 
-// fs.writeFileSync("path.json", JSON.stringify(dirs, null, 4));
+fs.writeFileSync("path.json", JSON.stringify(dirs, null, 4));

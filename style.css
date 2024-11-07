@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en-us">
-    <head>
-        <meta charset="utf-8">
-        <title>Git Cloud: Home</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="https://github.com/fluidicon.png">
-        <style>
-            body { 
+body { 
    font-family: Arial, Helvetica, sans-serif;
    margin: 0px;
    padding: 0px;
@@ -90,26 +82,3 @@ img {
     transform: scale(0.95);
     background-color: burlywood;
 }
-        </style>
-    </head>
-    <body>
-        <div class="main-header">
-            <h3 class="reverse" onclick="location.href='../index.html'">◀️ Back</h3><h2 class="main-title">Git Cloud: Home</h2><h3 class="reverse" onclick="location.href='../index.html'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
-        </div>
-        <div class="body">
-            
-<div class="link" onclick="linkClick('shared/index.html')">
-    <div class="link-title">📁&nbsp;&nbsp;shared</div>
-</div>
-<br />
-        </div>
-        <script>
-            const cardClick = (href) => {
-    location.href = href;
-}
-const linkClick = (href) => {
-    location.href = href;
-}
-        </script>
-    </body>
-</html>

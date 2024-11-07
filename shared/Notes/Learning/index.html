@@ -1,18 +1,146 @@
-
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
-        <title>Git Cloud</title>
+        <title>Git Cloud: Learning</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="https://github.com/fluidicon.png">
+        <style>
+            body { 
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0px;
+   padding: 0px;
+}
+.main-header {
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+    background-color: burlywood;
+    display: flex;
+}
+.reverse {
+    cursor: pointer;
+    flex-grow: 1;
+}
+.main-title {
+    text-align: center;
+    flex-grow: 8;
+}
+.card {
+    display: inline-block;
+    position: relative;
+    background-color: antiquewhite;
+    cursor: pointer;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+img {
+    width: 300px;
+}
+.card-title {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    vertical-align: top;
+}
+.body {
+    padding: 10px;
+}
+.link {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    background-color: antiquewhite;
+    cursor: pointer;
+    width: 300px;
+    margin: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+.link-title {
+    font-weight: 500;
+    /* height: 50px; */
+}
+.card-download {
+    padding: 30%;
+    padding-top: 10px;
+}
+.download-image {
+    width: 100%;
+}
+
+.card:hover {
+    transform: scale(0.95);
+    background-color: burlywood;
+}
+.link:hover {
+    transform: scale(0.95);
+    background-color: burlywood;
+}
+        </style>
     </head>
     <body>
-        <h1>Git Cloud</h1>
-        <a href="主動學習_化學.pdf">主動學習_化學.pdf</a><br />
-        <a href="主動學習_地科.pdf">主動學習_地科.pdf</a><br />
-        <a href="主動學習_數學126題.pdf">主動學習_數學126題.pdf</a><br />
-        <a href="主動學習_物理.pdf">主動學習_物理.pdf</a><br />
-        <a href="主動學習_生物.pdf">主動學習_生物.pdf</a><br />
+        <div class="main-header">
+            <h3 class="reverse" onclick="location.href='../index.html'">◀️ Back</h3><h2 class="main-title">Git Cloud: Learning</h2><h3 class="reverse" onclick="location.href='../index.html'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        </div>
+        <div class="body">
+            <br />
+<div class="card" onclick="cardClick('主動學習_化學.pdf')">
+    <div class="card-title">主動學習_化學</div>
+    <div class="card-body">
+        <iframe title="主動學習_化學" src="主動學習_化學.pdf" frameborder="0"></iframe>
+    </div>
+</div>
 
+<div class="card" onclick="cardClick('主動學習_地科.pdf')">
+    <div class="card-title">主動學習_地科</div>
+    <div class="card-body">
+        <iframe title="主動學習_地科" src="主動學習_地科.pdf" frameborder="0"></iframe>
+    </div>
+</div>
+
+<div class="card" onclick="cardClick('主動學習_數學126題.pdf')">
+    <div class="card-title">主動學習_數學126題</div>
+    <div class="card-body">
+        <iframe title="主動學習_數學126題" src="主動學習_數學126題.pdf" frameborder="0"></iframe>
+    </div>
+</div>
+
+<div class="card" onclick="cardClick('主動學習_物理.pdf')">
+    <div class="card-title">主動學習_物理</div>
+    <div class="card-body">
+        <iframe title="主動學習_物理" src="主動學習_物理.pdf" frameborder="0"></iframe>
+    </div>
+</div>
+
+<div class="card" onclick="cardClick('主動學習_生物.pdf')">
+    <div class="card-title">主動學習_生物</div>
+    <div class="card-body">
+        <iframe title="主動學習_生物" src="主動學習_生物.pdf" frameborder="0"></iframe>
+    </div>
+</div>
+
+        </div>
+        <script>
+            const cardClick = (href) => {
+    location.href = href;
+}
+const linkClick = (href) => {
+    location.href = href;
+}
+        </script>
     </body>
 </html>

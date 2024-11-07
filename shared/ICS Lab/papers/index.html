@@ -1,20 +1,160 @@
-
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
-        <title>Git Cloud</title>
+        <title>Git Cloud: papers</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="https://github.com/fluidicon.png">
+        <style>
+            body { 
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0px;
+   padding: 0px;
+}
+.main-header {
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+    background-color: burlywood;
+    display: flex;
+}
+.reverse {
+    cursor: pointer;
+    flex-grow: 1;
+}
+.main-title {
+    text-align: center;
+    flex-grow: 8;
+}
+.card {
+    display: inline-block;
+    position: relative;
+    background-color: antiquewhite;
+    cursor: pointer;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+img {
+    width: 300px;
+}
+.card-title {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    vertical-align: top;
+}
+.body {
+    padding: 10px;
+}
+.link {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    background-color: antiquewhite;
+    cursor: pointer;
+    width: 300px;
+    margin: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+.link-title {
+    font-weight: 500;
+    /* height: 50px; */
+}
+.card-download {
+    padding: 30%;
+    padding-top: 10px;
+}
+.download-image {
+    width: 100%;
+}
+
+.card:hover {
+    transform: scale(0.95);
+    background-color: burlywood;
+}
+.link:hover {
+    transform: scale(0.95);
+    background-color: burlywood;
+}
+        </style>
     </head>
     <body>
-        <h1>Git Cloud</h1>
-        <a href="2009SOVC_A_0.92mW_10-bit_50-MSs_SAR_ADC_in_0.13um_CMOS_Process.pdf">2009SOVC_A_0.92mW_10-bit_50-MSs_SAR_ADC_in_0.13um_CMOS_Process.pdf</a><br />
-        <a href="500-MS_s_5-bit_ADC_in_65-nm_CMOS_With_Split_Capacitor_Array_DAC.pdf">500-MS_s_5-bit_ADC_in_65-nm_CMOS_With_Split_Capacitor_Array_DAC.pdf</a><br />
-        <a href="A_10-bit_50-MS_s_SAR_ADC_With_a_Monotonic_Capacitor_Switching_Procedure.pdf">A_10-bit_50-MS_s_SAR_ADC_With_a_Monotonic_Capacitor_Switching_Procedure.pdf</a><br />
-        <a href="A_8-bit_500-KS_s_low_power_SAR_ADC_for_bio-medical_applications.pdf">A_8-bit_500-KS_s_low_power_SAR_ADC_for_bio-medical_applications.pdf</a><br />
-        <a href="BRSummer15Switch.pdf">BRSummer15Switch.pdf</a><br />
-        <a href="phase-locked-loops.pdf">phase-locked-loops.pdf</a><br />
-        <a href="Redundancy.pdf">Redundancy.pdf</a><br />
+        <div class="main-header">
+            <h3 class="reverse" onclick="location.href='../index.html'">◀️ Back</h3><h2 class="main-title">Git Cloud: papers</h2><h3 class="reverse" onclick="location.href='../index.html'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        </div>
+        <div class="body">
+            <br />
+<div class="card" onclick="cardClick('2009SOVC_A_0.92mW_10-bit_50-MSs_SAR_ADC_in_0.13um_CMOS_Process.pdf')">
+    <div class="card-title">2009SOVC_A_0.92mW_...</div>
+    <div class="card-body">
+        <iframe title="2009SOVC_A_0.92mW_..." src="2009SOVC_A_0.92mW_10-bit_50-MSs_SAR_ADC_in_0.13um_CMOS_Process.pdf" frameborder="0"></iframe>
+    </div>
+</div>
 
+<div class="card" onclick="cardClick('500-MS_s_5-bit_ADC_in_65-nm_CMOS_With_Split_Capacitor_Array_DAC.pdf')">
+    <div class="card-title">500-MS_s_5-bit_ADC...</div>
+    <div class="card-body">
+        <iframe title="500-MS_s_5-bit_ADC..." src="500-MS_s_5-bit_ADC_in_65-nm_CMOS_With_Split_Capacitor_Array_DAC.pdf" frameborder="0"></iframe>
+    </div>
+</div>
+
+<div class="card" onclick="cardClick('A_10-bit_50-MS_s_SAR_ADC_With_a_Monotonic_Capacitor_Switching_Procedure.pdf')">
+    <div class="card-title">A_10-bit_50-MS_s_S...</div>
+    <div class="card-body">
+        <iframe title="A_10-bit_50-MS_s_S..." src="A_10-bit_50-MS_s_SAR_ADC_With_a_Monotonic_Capacitor_Switching_Procedure.pdf" frameborder="0"></iframe>
+    </div>
+</div>
+
+<div class="card" onclick="cardClick('A_8-bit_500-KS_s_low_power_SAR_ADC_for_bio-medical_applications.pdf')">
+    <div class="card-title">A_8-bit_500-KS_s_l...</div>
+    <div class="card-body">
+        <iframe title="A_8-bit_500-KS_s_l..." src="A_8-bit_500-KS_s_low_power_SAR_ADC_for_bio-medical_applications.pdf" frameborder="0"></iframe>
+    </div>
+</div>
+
+<div class="card" onclick="cardClick('BRSummer15Switch.pdf')">
+    <div class="card-title">BRSummer15Switch...</div>
+    <div class="card-body">
+        <iframe title="BRSummer15Switch..." src="BRSummer15Switch.pdf" frameborder="0"></iframe>
+    </div>
+</div>
+
+<div class="card" onclick="cardClick('phase-locked-loops.pdf')">
+    <div class="card-title">phase-locked-loops...</div>
+    <div class="card-body">
+        <iframe title="phase-locked-loops..." src="phase-locked-loops.pdf" frameborder="0"></iframe>
+    </div>
+</div>
+
+<div class="card" onclick="cardClick('Redundancy.pdf')">
+    <div class="card-title">Redundancy</div>
+    <div class="card-body">
+        <iframe title="Redundancy" src="Redundancy.pdf" frameborder="0"></iframe>
+    </div>
+</div>
+
+        </div>
+        <script>
+            const cardClick = (href) => {
+    location.href = href;
+}
+const linkClick = (href) => {
+    location.href = href;
+}
+        </script>
     </body>
 </html>
