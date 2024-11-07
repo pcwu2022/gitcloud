@@ -146,7 +146,9 @@ const createHTMLs = async (current, path) => {
     
     let html = await render(Template, props);
     fs.writeFile(path + "index.html", html, (err) => {
-        console.error(err);
+        if (err){
+            console.error(err);
+        }
     });
 }
 
