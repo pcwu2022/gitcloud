@@ -44,13 +44,17 @@
                 "key": "papers",
                 "__files__": [
                     "2009SOVC_A_0.92mW_10-bit_50-MSs_SAR_ADC_in_0.13um_CMOS_Process.pdf",
+                    "2_Comparator_SAR.pdf",
                     "500-MS_s_5-bit_ADC_in_65-nm_CMOS_With_Split_Capacitor_Array_DAC.pdf",
+                    "An_Inverter-Based_Analog_Front-End_for_a_56-Gb_s_PAM-4_Wireline_Transceiver_in_16-nm_CMOS.pdf",
                     "A_10-bit_50-MS_s_SAR_ADC_With_a_Monotonic_Capacitor_Switching_Procedure.pdf",
                     "A_8-bit_500-KS_s_low_power_SAR_ADC_for_bio-medical_applications.pdf",
                     "BRSummer15Switch.pdf",
                     "index.html",
                     "phase-locked-loops.pdf",
-                    "Redundancy.pdf"
+                    "Redundancy.pdf",
+                    "sedes_thesis.pdf",
+                    "set_and_down.pdf"
                 ]
             },
             "programs": {
