@@ -29,6 +29,16 @@
             "The Centrality of Pu in the Universe.pdf",
             "課綱.md"
         ],
+        "Courses": {
+            "key": "Courses",
+            "QIC": {
+                "key": "QIC",
+                "__files__": [
+                    "111-2期中大抄.pdf",
+                    "quantum-computation-and-quantum-information-nielsen-chuang.pdf"
+                ]
+            }
+        },
         "ICS Lab": {
             "key": "ICS Lab",
             "__files__": [
