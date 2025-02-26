@@ -96,6 +96,12 @@
                 ]
             }
         },
+        "Music": {
+            "key": "Music",
+            "__files__": [
+                "Titanic - My Heart Will Go On.pdf"
+            ]
+        },
         "Notes": {
             "key": "Notes",
             "High School": {
