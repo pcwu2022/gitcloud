@@ -31,10 +31,15 @@
         ],
         "Courses": {
             "key": "Courses",
+            "__files__": [
+                "index.html"
+            ],
             "QIC": {
                 "key": "QIC",
                 "__files__": [
                     "111-2期中大抄.pdf",
+                    "index.html",
+                    "QIC_PPT_4Pages.pdf",
                     "quantum-computation-and-quantum-information-nielsen-chuang.pdf"
                 ]
             }
