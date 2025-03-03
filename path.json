@@ -23,6 +23,7 @@
         },
         "__files__": [
             "club.jpg",
+            "HW1.pdf",
             "HW6.pdf",
             "index.html",
             "instagram.html",
@@ -99,6 +100,7 @@
         "Music": {
             "key": "Music",
             "__files__": [
+                "index.html",
                 "Titanic - My Heart Will Go On.pdf"
             ]
         },
