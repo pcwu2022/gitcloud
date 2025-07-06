@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Git Cloud: TOEFL</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="https://github.com/fluidicon.png">
+        <style>
+            body { 
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0px;
+   padding: 0px;
+}
+.main-header {
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+    background-color: burlywood;
+    display: flex;
+}
+.reverse {
+    cursor: pointer;
+    flex-grow: 1;
+}
+.main-title {
+    text-align: center;
+    flex-grow: 8;
+}
+.card {
+    display: inline-block;
+    position: relative;
+    background-color: antiquewhite;
+    cursor: pointer;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+img {
+    width: 300px;
+}
+.card-title {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    vertical-align: top;
+}
+.body {
+    padding: 10px;
+}
+.link {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    background-color: antiquewhite;
+    cursor: pointer;
+    width: 300px;
+    margin: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+.link-title {
+    font-weight: 500;
+    /* height: 50px; */
+}
+.card-download {
+    padding: 30%;
+    padding-top: 10px;
+}
+.download-image {
+    width: 100%;
+}
+
+.card:hover {
+    transform: scale(0.95);
+    background-color: burlywood;
+}
+.link:hover {
+    transform: scale(0.95);
+    background-color: burlywood;
+}
+        </style>
+    </head>
+    <body>
+        <div class="main-header">
+            <h3 class="reverse" onclick="location.href='../index.html'">◀️ Back</h3><h2 class="main-title">Git Cloud: TOEFL</h2><h3 class="reverse" onclick="location.href='../index.html'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        </div>
+        <div class="body">
+            <br />
+<div class="card" onclick="cardClick('10.01-tst-prep-complete-test-the-reading-section.pdf')">
+    <div class="card-title">10.01-tst-prep-com...</div>
+    <div class="card-body">
+        <iframe title="10.01-tst-prep-com..." src="10.01-tst-prep-complete-test-the-reading-section.pdf" frameborder="0"></iframe>
+    </div>
+</div>
+
+<div class="card" onclick="cardClick('10.02-tst-prep-complete-test-the-listening-section.pdf')">
+    <div class="card-title">10.02-tst-prep-com...</div>
+    <div class="card-body">
+        <iframe title="10.02-tst-prep-com..." src="10.02-tst-prep-complete-test-the-listening-section.pdf" frameborder="0"></iframe>
+    </div>
+</div>
+
+<div class="card" onclick="cardClick('10.03-tst-prep-complete-test-the-speaking-section.pdf')">
+    <div class="card-title">10.03-tst-prep-com...</div>
+    <div class="card-body">
+        <iframe title="10.03-tst-prep-com..." src="10.03-tst-prep-complete-test-the-speaking-section.pdf" frameborder="0"></iframe>
+    </div>
+</div>
+
+<div class="card" onclick="cardClick('10.04-tst-prep-complete-test-the-writing-section.pdf')">
+    <div class="card-title">10.04-tst-prep-com...</div>
+    <div class="card-body">
+        <iframe title="10.04-tst-prep-com..." src="10.04-tst-prep-complete-test-the-writing-section.pdf" frameborder="0"></iframe>
+    </div>
+</div>
+
+        </div>
+        <script>
+            const cardClick = (href) => {
+    location.href = href;
+}
+const linkClick = (href) => {
+    location.href = href;
+}
+        </script>
+    </body>
+</html>

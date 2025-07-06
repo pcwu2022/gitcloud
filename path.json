@@ -24,12 +24,7 @@
         },
         "__files__": [
             "club.jpg",
-            "HW1.pdf",
-            "HW6.pdf",
-            "index.html",
-            "instagram.html",
-            "The Centrality of Pu in the Universe.pdf",
-            "課綱.md"
+            "index.html"
         ],
         "Courses": {
             "key": "Courses",
@@ -142,26 +137,21 @@
                 "從HelloWorld到神經網路.pdf"
             ]
         },
-        "scraped": {
-            "key": "scraped",
-            "__files__": [
-                "index.html",
-                "_f_job.json",
-                "_f_marriage.json",
-                "_f_mood.json",
-                "_f_relationship.json",
-                "_f_talk.json",
-                "_f_tech_job.json",
-                "_f_trending.json"
-            ]
-        },
         "Slides": {
             "key": "Slides",
             "__files__": [
-                "CTC期末報告.pdf",
                 "index.html",
                 "第五堂社課.pdf",
                 "醫用程式設計_20240727.pdf"
+            ]
+        },
+        "TOEFL": {
+            "key": "TOEFL",
+            "__files__": [
+                "10.01-tst-prep-complete-test-the-reading-section.pdf",
+                "10.02-tst-prep-complete-test-the-listening-section.pdf",
+                "10.03-tst-prep-complete-test-the-speaking-section.pdf",
+                "10.04-tst-prep-complete-test-the-writing-section.pdf"
             ]
         }
     }
